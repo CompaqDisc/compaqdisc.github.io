@@ -56,8 +56,8 @@
 		}
 	
 	div.widget{
-		color: #1c1d26;
-		background-color: #1c1d26;
+		border-style: groove;
+		border-width: 5px;
 	}
 
 	strong, b {
