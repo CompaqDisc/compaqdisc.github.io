@@ -54,6 +54,11 @@
 			color: #4cb2e4; !important;
 			border-bottom-color: transparent;
 		}
+	
+	div.widget{
+		color: #1c1d26;
+		background-color: #1c1d26;
+	}
 
 	strong, b {
 		color: #ffffff;
