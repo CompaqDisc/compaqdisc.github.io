@@ -56,8 +56,7 @@
 		}
 	
 	div.widget{
-		border-style: groove;
-		border-width: 5px;
+		border: groove 5px;
 	}
 
 	strong, b {
