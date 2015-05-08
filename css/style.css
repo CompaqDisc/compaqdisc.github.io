@@ -1566,8 +1566,8 @@
 		position: absolute;
 	}
 	
-	div[id^='comments'] iframe {
-		width: 100% !important;
+	div.comments iframe {
+		width: 90% !important;
 	}
 
 /* Banner */
