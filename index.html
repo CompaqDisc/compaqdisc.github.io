@@ -175,7 +175,23 @@
 					</form>
 					<p></p>
 				</div>
-				<div id="comments" class="comments" ></div>
+				<div id="disqus_thread"></div>
+				<!-- Comments -->
+					<script type="text/javascript">
+					/* * * CONFIGURATION VARIABLES * * */
+					var disqus_shortname = 'herobrine2nether';
+					var disqus_identifier = 'MainPage';
+					var disqus_title = 'Herobrine2Nether > Main Page';
+					var disqus_url = 'http://herobrine2nether.github.io/index.html';
+
+					/* * * DON'T EDIT BELOW THIS LINE * * */
+					(function() {
+						var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+						dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+						(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+					})();
+					</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 			</section>
 
 		<!-- Footer -->
@@ -205,15 +221,6 @@
 		
 		<!-- Google Social Plugins -->
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
-		<script src="https://apis.google.com/js/plusone.js"></script>
-		<script>
-		gapi.comments.render('comments', {
-			href: window.location,
-			width: '624',
-			first_party_property: 'BLOGGER',
-			view_type: 'FILTERED_POSTMOD'
-		});
-		</script>
 		
 		<!-- Twitter Plugins -->
 		<script>
