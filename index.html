@@ -108,7 +108,7 @@
 							<section class="4u 6u$(medium) 12u$(xsmall)">
 								<a class="plain" href="http://www.facebook.com/herobrine2nether/"><span class="icon major fa-facebook-official color_facebook"></span></a>
 								<h3>Facebook</h3>
-								<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								<p><div class="fb-like" data-href="http://herobrine2nether.github.io" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div></p>
 							</section>
 							<section class="4u$ 6u(medium) 12u$(xsmall)">
 								<a class="plain" href="http://www.youtube.com/channel/UCT0soJzzG7rBb-zdqwtgjYQ"><span class="icon major fa-youtube color_youtube"></span></a>
@@ -194,5 +194,13 @@
 		<script src="js/init.js"></script>
 		<script src="js/no-anchor.js"></script>
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 	</body>
 </html>
