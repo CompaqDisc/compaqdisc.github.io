@@ -1565,6 +1565,10 @@
 		box-shadow: none;
 		position: absolute;
 	}
+	
+	div[id^='comments'] iframe {
+		width: 100% !important;
+	}
 
 /* Banner */
 
