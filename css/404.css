@@ -1,16 +1,17 @@
 body {
   font-family: monospace;
-  font-size: 18px;
-  background: #111;
-  color: #666;
-  margin: 0;
+  font-size: 18px !important;
+  background: #111 !important;
+  color: #666 !important;
+  margin: 0 !important;
 }
 
 img {
-  display: block;
-  width: 100%;
+  display: block !important;
+  width: 100% !important;
 }
 
+/*
 input[type=checkbox] {
   display: none;
 }
@@ -59,29 +60,30 @@ input[type=checkbox] + label:before {
 input[type=checkbox]:checked + label:before {
   background: #00FFAA;
 }
+*/
 
 .container {
-  position: relative;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 5%;
+  position: relative !important;
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  padding: 5% !important;
 }
 
 .scene {
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .fill {
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
-  left: 5%;
-  top: 5%;
+  position: absolute !important;
+  bottom: 5% !important;
+  right: 5% !important;
+  left: 5% !important;
+  top: 5% !important;
 }
 
 .expand-width {
-  width: 100%;
+  width: 100% !important;
 }
 
 .border {
@@ -89,7 +91,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .aspect {
-  opacity: 0.2;
+  opacity: 0.2 !important;
 }
 
 .layer:nth-child(1) {
