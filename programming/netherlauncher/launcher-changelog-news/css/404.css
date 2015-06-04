@@ -1,0 +1,64 @@
+body {
+  font-family: monospace;
+  font-size: 18px !important;
+  background: #111 !important;
+  color: #666 !important;
+  margin: 0 !important;
+}
+
+img {
+  display: block !important;
+  width: 100% !important;
+}
+
+.container {
+  position: relative !important;
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  padding: 5% !important;
+}
+
+.scene {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.fill {
+  position: absolute !important;
+  bottom: 5% !important;
+  right: 5% !important;
+  left: 5% !important;
+  top: 5% !important;
+}
+
+.expand-width {
+  width: 100% !important;
+}
+
+.aspect {
+  opacity: 0.2 !important;
+}
+
+.layer:nth-child(1) {
+  opacity: 0.15;
+}
+
+.layer:nth-child(2) {
+  opacity: 0.30;
+}
+
+.layer:nth-child(3) {
+  opacity: 0.45;
+}
+
+.layer:nth-child(4) {
+  opacity: 0.60;
+}
+
+.layer:nth-child(5) {
+  opacity: 0.75;
+}
+
+.layer:nth-child(6) {
+  opacity: 0.90;
+}
