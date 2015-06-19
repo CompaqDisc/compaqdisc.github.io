@@ -10,3 +10,16 @@ MD5sum: c54a749686b8f1cfbeaa808bc7deb217
 Name: Yosemite Theme
 Author: Herobrine2Nether <herobrine2nether.com@gmail.com>
 Depiction: http://herobrine2nether.github.io/cydia/depictions/io.github.herobrine2nether.themes.yosemite.html
+
+Package: io.github.herobrine2nether.bootlogos.windows-white-4-4s
+Version: 1.0
+Section: Themes (BootLogo)
+Maintainer: Herobrine2Nether <herobrine2nether.com@gmail.com>
+Depends: org.chronic-dev.animate
+Architecture: iphoneos-arm
+Filename: ./deb/io.github.herobrine2nether.bootlogos.windows-white-4-4s.deb
+Size: 660294
+MD5sum: 03f9419e7aac55c7728aee6103d7c9f8
+Name: Windows BootLogo for iPhone 4/4s
+Author: Herobrine2Nether <herobrine2nether.com@gmail.com>
+Depiction: http://herobrine2nether.github.io/cydia/depictions/io.github.herobrine2nether.bootlogos.windows-white-4-4s.html
