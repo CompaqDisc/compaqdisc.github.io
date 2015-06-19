@@ -6,7 +6,7 @@ Depends: winterboard, com.codethemed.iconbundles
 Architecture: iphoneos-arm
 Filename: ./deb/io.github.herobrine2nether.themes.yosemite.deb
 Size: 400094
-MD5sum: C54A749686B8F1CFBEAA808BC7DEB217
+MD5sum: c54a749686b8f1cfbeaa808bc7deb217
 Name: Yosemite Theme
 Author: Herobrine2Nether <herobrine2nether.com@gmail.com>
 Depiction: http://herobrine2nether.github.io/cydia/depictions/io.github.herobrine2nether.themes.yosemite.html
