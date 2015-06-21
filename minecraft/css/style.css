@@ -1,4 +1,4 @@
-@import url(font-awesome.min.css);
+@import url(http://herobrine2nether.github.io/css/font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
 /*
@@ -962,7 +962,7 @@
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		.button:active {
-			background-color: rgba(228, 76, 101, 0.15);
+			background-color: rgba(76, 178, 228, 0.15);
 		}
 
 		input[type="submit"].icon:before,
