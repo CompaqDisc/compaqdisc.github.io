@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <!--
 	Landed by HTML5 UP
 	html5up.net | @n33co
@@ -7,21 +7,39 @@
 <html>
 	<head>
 		<title>Herobrine2Nether</title>
-		<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		
+		<!-- Favicon / Begin -->
+			<link rel="icon" type="image/png" href="http://herobrine2nether.github.io/favicon.png" />
+			<link rel="shortcut icon" type="image/x-icon"  href="http://herobrine2nether.github.io/favicon.ico" />
+		<!-- Favicon / End -->
+		
+		<!-- For Apple Devices - WebClip / Begin -->
+			<meta name="apple-mobile-web-app-status-bar-style" content="black">
+			<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- For Apple Devices - WebClip / End -->
+		
+		<!-- Encoding / Begin -->
+			<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+			<meta charset="UTF-8" />
+		<!-- Encoding / End -->
+		
+		<!-- Other Metadata / Begin -->
+			<meta name="description" content="" />
+			<meta name="author" content="" />
+			<meta name="keywords" content="Herobrine2Nether,Minecraft" />
+		<!-- Other Metadata / End -->
+		
+		<!-- Viewport / Begin -->
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Viewport / End -->
+		
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
+			<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+			<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body class="">
 
@@ -192,6 +210,7 @@
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
 		<script src="js/no-anchor.js"></script>
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		
 		<!-- Google Social Plugins -->
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -201,28 +220,39 @@
 		!function(d,s,id){
 			var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){
 				js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}
-		}(document, 'script', 'twitter-wjs');
+		}
+		(document, 'script', 'twitter-wjs');
 		</script>
 		
 		<!-- Facebook Plugins -->
 		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
+		<script>
+		(function(d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
 			if (d.getElementById(id)) return;
 			js = d.createElement(s); js.id = id;
 			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
 			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
+		}
+		(document, 'script', 'facebook-jssdk'));
 		</script>
+		<!-- End Facebook Plugins -->
 		
 		<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MQ58XF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MQ58XF');</script>
-<!-- End Google Tag Manager -->
+		<noscript>
+			<iframe src="//www.googletagmanager.com/ns.html?id=GTM-MQ58XF" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<script>
+		(function(w,d,s,l,i)
+			{w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+				var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),
+				dl=l!='dataLayer'?'&l='+l:'';
+				j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})
+		(window,document,'script','dataLayer','GTM-MQ58XF');
+		</script>
+		<!-- End Google Tag Manager -->
+		
 	</body>
 </html>
