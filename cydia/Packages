@@ -1,12 +1,12 @@
 Package: io.github.herobrine2nether.themes.yosemite
-Version: 1.1
+Version: 1.2
 Section: Themes (WinterBoard)
 Maintainer: Herobrine2Nether <herobrine2nether.com@gmail.com>
 Depends: winterboard, com.codethemed.iconbundles
 Architecture: iphoneos-arm
 Filename: ./deb/io.github.herobrine2nether.themes.yosemite.deb
-Size: 402486
-MD5sum: ecef3730e6661c4cdf9495608d2bc8a9
+Size: 402480
+MD5sum: 154548efb8004765bb3267de9150caa2
 Name: Yosemite Theme
 Author: Herobrine2Nether <herobrine2nether.com@gmail.com>
 Depiction: http://herobrine2nether.github.io/cydia/depictions/io.github.herobrine2nether.themes.yosemite.html
