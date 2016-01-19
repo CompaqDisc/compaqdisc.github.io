@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <browserconfig>
-  <msapplication>
-    <tile>
-	  <square70x70logo src="https://herobrine2nether.github.io/img/livetile/tiny.png"/>
-	  <square150x150logo src="https://herobrine2nether.github.io/img/livetile/square.png"/>
-	  <wide310x150logo src="https://herobrine2nether.github.io/img/livetile/wide.png"/>
-	  <square310x310logo src="https://herobrine2nether.github.io/img/livetile/large.png"/>
-	  <TileColor>#282828</TileColor>
-	</tile>
-  
-    <notification>
-      <polling-uri  src="notifications/1.xml"/>
-      <polling-uri2 src="notifications/2.xml"/>
-      <polling-uri3 src="notifications/3.xml"/>
-      <frequency>30</frequency>
-      <cycle>1</cycle>
-    </notification>
-  </msapplication>
+	<msapplication>
+		<tile>
+			<square70x70logo src="https://herobrine2nether.github.io/img/mstile/tiny.png"/>
+			<square150x150logo src="https://herobrine2nether.github.io/img/mstile/square.png"/>
+			<wide310x150logo src="https://herobrine2nether.github.io/img/mstile/wide.png"/>
+			<square310x310logo src="https://herobrine2nether.github.io/img/mstile/large.png"/>
+			<TileColor>#282828</TileColor>
+		</tile>
+
+		<notification>
+			<polling-uri  src="https://herobrine2nether.github.io/notifications/1.xml"/>
+			<polling-uri2 src="https://herobrine2nether.github.io/notifications/2.xml"/>
+			<polling-uri3 src="https://herobrine2nether.github.io/notifications/3.xml"/>
+			<frequency>30</frequency>
+			<cycle>1</cycle>
+		 </notification>
+	</msapplication>
 </browserconfig>
