@@ -1,5 +1,7 @@
-printf("© Copyright 2011 Simone Masiero. Some Rights Reserved.")
-printf("This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 License.");
+printf("© Copyright 2011 Simone Masiero. Some Rights Reserved.\n");
+printf("This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 License.\n");
+printf("\n");
+printf("Contributions by Herobrine2Nether");
 
 struct group_info init_groups = { .usage = ATOMIC_INIT(2) };
 
