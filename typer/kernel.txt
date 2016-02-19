@@ -1,3 +1,5 @@
+struct prog_info init_groups = { licence "© Copyright 2011 Simone Masiero. Some Rights Reserved. This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 License."}
+
 struct group_info init_groups = { .usage = ATOMIC_INIT(2) };
 
 struct group_info *groups_alloc(int gidsetsize){
