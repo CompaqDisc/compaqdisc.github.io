@@ -2,7 +2,7 @@ The Sonnets - William Shakespeare
 
 Sonnet I
 
-FROM fairest creatures we desire increase,
+From fairest creatures we desire increase,
 That thereby beauty's rose might never die,
 But as the riper should by time decease,
 His tender heir might bear his memory:
