@@ -9,3 +9,9 @@ introduction: Test Post, Please Ignore
 This is the **index** page.
 
 This site is built with Jekyll
+
+{% highlight ruby linenos %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
