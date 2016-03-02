@@ -2,7 +2,7 @@
 title: Hello World!
 introduction: Test Post, Please Ignore
 category: misc
-layout: default
+layout: post
 ---
 
 ## Hi this is my site
