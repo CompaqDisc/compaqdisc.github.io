@@ -21,7 +21,7 @@ introduction: Sorted By Most Recent
         			{% for post in site.posts %}
         				{% assign currentdate = post.date | date: "%B %Y" %}
   						{% if currentdate != date %}
-    					{% unless forloop.first %}</div></li>{% endunless %}
+    					{% unless forloop.first %}{% endunless %}
     						<li class="feature-item">
     							<div class="feature-icon">
     								<span data-icon="" class="icon"></span>
@@ -31,7 +31,7 @@ introduction: Sorted By Most Recent
     						{% assign date = currentdate %}
   						{% endif %}
     					<a href="{{ post.url }}">{{ post.title }}</a>
-  						{% if forloop.last %}</ul>{% endif %}
+  						{% if forloop.last %}</div></li>{% endif %}
 					{% endfor %}
 					</ul>
 					</div>
