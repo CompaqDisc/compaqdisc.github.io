@@ -1,7 +1,8 @@
 ---
 title: Hello World!
-layout: default
 introduction: Test Post, Please Ignore
+category: misc
+layout: default
 ---
 
 ## Hi this is my site
