@@ -13,17 +13,29 @@ introduction: Sorted By Most Recent
     	<section class="blog-intro section-padding" id="next">
 			<div class="container">
             	<div class="row">
+            		<div class="col-md-5">
+            			<div class="feature-list">
+            				<h3>Blog Posts</h3>
+            				<p>Sorted by most recent.</p>
+            				<ul class="features-stack">
         			{% for post in site.posts %}
         				{% assign currentdate = post.date | date: "%B %Y" %}
   						{% if currentdate != date %}
-    					{% unless forloop.first %}</ul>{% endunless %}
-    						<h2 id="{{post.date | date: "%D"}}">{{ currentdate }}</h1>
-    						<ul>
+    					{% unless forloop.first %}</div></li>{% endunless %}
+    						<li class="feature-item">
+    							<div class="feature-icon">
+    								<span data-icon="" class="icon"></span>
+    							</div>
+    							<div class="feature-content">
+    								<h5 id="{{post.date | date: "%D"}}">{{ currentdate }}</h5>
     						{% assign date = currentdate %}
   						{% endif %}
-    					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    					<a href="{{ post.url }}">{{ post.title }}</a>
   						{% if forloop.last %}</ul>{% endif %}
 					{% endfor %}
+					</ul>
+					</div>
+					</div>
 				</div>
 			</div>
 		</section>
