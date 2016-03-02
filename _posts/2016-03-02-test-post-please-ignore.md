@@ -10,8 +10,8 @@ This is the **index** page.
 
 This site is built with Jekyll
 
-{% highlight ruby linenos %}
-def foo
-  puts 'foo'
-end
+{% highlight js linenos %}
+while(1) {
+  console.log(0xff)
+}
 {% endhighlight %}
