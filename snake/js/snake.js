@@ -114,14 +114,14 @@ SNAKE.Snake = SNAKE.Snake || (function() {
         var me = this,
             playingBoard = config.playingBoard,
             myId = instanceNumber++,
-            growthIncr = 200,
+            growthIncr = 35,
             moveQueue = [], // a queue that holds the next moves of the snake
             currentDirection = 1, // 0: up, 1: left, 2: down, 3: right
             columnShift = [0, 1, 0, -1],
             rowShift = [-1, 0, 1, 0],
             xPosShift = [],
             yPosShift = [],
-            snakeSpeed = 150,
+            snakeSpeed = 125,
             isDead = false,
             isPaused = false;
         function getMode (mode, speed) {
