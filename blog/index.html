@@ -30,7 +30,7 @@ introduction: Sorted By Most Recent
     								<h5 id="{{post.date | date: "%D"}}">{{ currentdate }}</h5>
     						{% assign date = currentdate %}
   						{% endif %}
-    					<a href="{{ post.url }}"><p>{{ post.title }}</p></a>
+    					<a href="{{ post.url }}"><p>{{ post.title }} ></p></a>
   						{% if forloop.last %}</div></li>{% endif %}
 					{% endfor %}
 					</ul>
