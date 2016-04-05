@@ -6,3 +6,5 @@ layout: post
 ---
 
 ##Krist Balance Checker
+
+{% include krist.html %}
