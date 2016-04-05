@@ -22,12 +22,12 @@ function httpGet(theUrl)
 
 function getKrist(address)
 {
-  var obj = JSON.parse(httpGet("http://krist.ceriat.net/addresses/"+address));
+  var obj = JSON.parse(httpGet("https://krist.ceriat.net/addresses/"+address));
   return obj.address.balance;
 }
 </script>
 
-<form action="javascript: document.getElementById('kbal').value = getKrist(document.getElementById('kaddr').value);">
+<form action="javascript: document.getElementById('kbal').value = getKrist(document.getElementById('kaddr').value + httpGet('https://krist.ceriat.net/addresses/'+document.getElementById('kaddr').value);">
     <p>Krist Address: </p>
     <input type="text" name="kaddr" id="kaddr">
     <p>Balance: </p>
