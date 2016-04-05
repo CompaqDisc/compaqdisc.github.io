@@ -4,7 +4,6 @@ introduction: Check dat Krist!
 category: krist
 layout: post
 ---
-
-##Krist Balance Checker
+## Krist Balance Checker
 
 {% include krist.html %}
