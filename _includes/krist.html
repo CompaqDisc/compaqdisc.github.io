@@ -1,36 +1,18 @@
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 <script>
-function httpGet(theUrl)
-{
-    if (window.XMLHttpRequest)
-    {// code for IE7+, Firefox, Chrome, Opera, Safari
-        xmlhttp=new XMLHttpRequest();
-    }
-    else
-    {// code for IE6, IE5
-        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xmlhttp.onreadystatechange=function()
-    {
-        if (xmlhttp.readyState==4 && xmlhttp.status==200)
-        {
-            return xmlhttp.responseText;
-        }
-    }
-    xmlhttp.open("GET", theUrl, false );
-    xmlhttp.send();    
-}
-
-function getKrist(address)
-{
-  var obj = JSON.parse(httpGet("https://krist.ceriat.net/addresses/"+address));
-  return obj.address.balance;
-}
+  function getKrist() {
+    oFormObject = document.forms['forms0'];
+    var addr = oFormObject.elements["kaddr"].value;
+    $.getJSON("https://krist.ceriat.net/addresses/" + addr, function(json) {
+      oFormObject.elements["kbal"].value = json["address"].balance + " KST";
+    });
+  }
 </script>
 
-<form action="javascript: document.getElementById('kbal').value = getKrist(document.getElementById('kaddr').value + httpGet('https://krist.ceriat.net/addresses/'+document.getElementById('kaddr').value);">
-    <p>Krist Address: </p>
-    <input type="text" name="kaddr" id="kaddr">
-    <p>Balance: </p>
-    <input type="text" name="kbal" id="kbal">
-    <input type="submit" value="Submit">
+<form action="javascript: getKrist();" id="forms0">
+  <p>Krist Address: </p>
+  <input type="text" name="kaddr">
+  <p>Balance: </p>
+  <input type="text" name="kbal">
+  <input type="submit" value="Submit">
 </form>
