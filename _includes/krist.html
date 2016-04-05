@@ -27,3 +27,10 @@ function getKrist(address)
 }
 </script>
 
+<form action="javascript: document.getElementById('kbal').value = getKrist(document.getElementById('kaddr').value);">
+    <p>Krist Address: </p>
+    <input type="text" name="kaddr" id="kaddr">
+    <p>Balance: </p>
+    <input type="text" name="kbal" id="kbal">
+    <input type="submit" value="Submit">
+</form>
