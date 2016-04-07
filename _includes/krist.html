@@ -14,7 +14,7 @@
     table = document.getElementById("krichest");
     richestFormObject = document.forms['forms1'];
     var limit = richestFormObject.elements["klimit"].value;
-    $.getJSON("http://krist.ceriat.net/addresses/rich/?limit=" + limit, function(json) {
+    $.getJSON("https://krist.ceriat.net/addresses/rich/?limit=" + limit, function(json) {
       for (i = 0; i < limit; i++) {
         var newRow = table.insertRow(-1);
         
