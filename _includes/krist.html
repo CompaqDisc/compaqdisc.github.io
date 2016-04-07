@@ -7,7 +7,7 @@
     $.getJSON("https://krist.ceriat.net/addresses/" + addr, function(json) {
       oFormObject.elements["kbal"].value = json["address"].balance + " KST";
     });
-    setTimeout(function(){ document.getElementById("money").className = "fa fa-money"; }, 1500);
+    setTimeout(function(){ document.getElementById("money").className = "fa fa-money"; }, 1000);
   }
 </script>
 
