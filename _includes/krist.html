@@ -1,7 +1,7 @@
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 <script>
   function getKrist() {
-    document.getElementById("money").className = "fa fa-spin fa-circle-o-notch";
+    document.getElementById("money").className = "fa fa-refresh";
     oFormObject = document.forms['forms0'];
     var addr = oFormObject.elements["kaddr"].value;
     $.getJSON("https://krist.ceriat.net/addresses/" + addr, function(json) {
