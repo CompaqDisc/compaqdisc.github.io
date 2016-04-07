@@ -21,10 +21,9 @@
         var newAddr = newRow.insertCell(0);
         var newBal = newRow.insertCell(1);
         
-        newAddr = json["addresses"][i].address;
-        newBal = json["addresses"][i].balance + " KST";
+        newAddr.innerHTML = json["addresses"][i].address;
+        newBal.innerHTML = json["addresses"][i].balance + " KST";
       }
-      //balanceFormObject.elements["kbal"].value = json["address"].balance + " KST";
     });
   }
 </script>
