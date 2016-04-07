@@ -707,7 +707,7 @@ Sign up form
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
     margin-left: 20px; }
-  .sign-up .signup-form .form-input-group i.fa-circle-o-notch {
+  .sign-up .signup-form .form-input-group i.fa-refresh {
     font-size: 14px;
     position: absolute;
     top: 50%;
