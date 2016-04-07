@@ -1,11 +1,13 @@
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 <script>
   function getKrist() {
+    document.getElementById("money").className = "fa fa-spin fa-circle-o-notch";
     oFormObject = document.forms['forms0'];
     var addr = oFormObject.elements["kaddr"].value;
     $.getJSON("https://krist.ceriat.net/addresses/" + addr, function(json) {
       oFormObject.elements["kbal"].value = json["address"].balance + " KST";
     });
+    document.getElementById("money").className = "fa fa-money";
   }
 </script>
 
@@ -20,7 +22,7 @@
             <i class="fa fa-envelope"></i><input type="text" name="kaddr" placeholder="kp5lzt1u32" required>
           </div>
           <div class="form-input-group">
-            <i class="fa fa-money"></i><input type="text" name="kbal" placeholder="0 KST">
+            <i id="money" class="fa fa-money"></i><input type="text" name="kbal" placeholder="0 KST">
           </div>
           <button type="submit" class="btn-fill sign-up-btn">Check</button>
         </form>
