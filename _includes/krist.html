@@ -12,13 +12,13 @@
   
   function getRich() {
     document.getElementById("ktop").className = "fa fa-refresh";
-    table = document.getElementById("krichest");
+    table = document.getElementById("krichest").getElementsByTagName('tbody')[0];
     richestFormObject = document.forms['forms1'];
     var limit = richestFormObject.elements["klimit"].value;
-    table.innerHTML = "<tr>\n\t<th>Address</th>\n\t<th>Balance</th>\n</tr>"
+    var newTable = document.createElement('tbody');
     $.getJSON("https://krist.ceriat.net/addresses/rich/?limit=" + limit, function(json) {
       for (i = 0; i < limit; i++) {
-        var newRow = table.insertRow(-1);
+        var newRow = newTable.insertRow(-1);
         
         var newAddr = newRow.insertCell(0);
         var newBal = newRow.insertCell(1);
@@ -27,6 +27,7 @@
         newBal.innerHTML = json["addresses"][i].balance + " KST";
       }
     });
+    table.parentNode.replaceChild(newTable, table)
     setTimeout(function(){ document.getElementById("ktop").className = "fa fa-cog"; }, 1000);
   }
 </script>
@@ -61,12 +62,19 @@
           <button type="submit" class="btn-fill sign-up-btn">Check</button>
         </form>
         <br/>
-        <table id="krichest" class="table" border="0">
-          <tr>
-            <th>Address</th>
-            <th>Balance</th>
-          </tr>
-        </table>
+        <div class="table-responsive">
+          <table id="krichest" class="table table-hover" border="0">
+            <thead>
+              <tr>
+                <th>Address</th>
+                <th>Balance</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
