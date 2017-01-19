@@ -1,11 +1,17 @@
+/**********************************************
+  Main Body Style
+**********************************************/
 html {
+    font-family:    'Open Sans', sans-serif;
     background-color: #CBDBFC;
 }
 
+/**********************************************
+  Header and Contact
+**********************************************/
 .heading {
     text-align:     center;
     color:          #37946E;
-    font-family:    'Open Sans', sans-serif;
 }
 
 .heading.accent {
@@ -14,6 +20,23 @@ html {
 
 .detail {
     text-align:     center;
-    color:          #00899b;
-    font-family:    'Open Sans', sans-serif;
+    color:          #37946E;
+}
+
+.sep::before {
+    color: #4B692F;
+    content: "|";
+}
+
+/**********************************************
+  Section Headings
+**********************************************/
+.section {
+    color: #306082;
+}
+
+.break {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #3F3F74;
 }
