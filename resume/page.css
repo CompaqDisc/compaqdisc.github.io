@@ -6,6 +6,10 @@ html {
     background-color: #CBDBFC;
 }
 
+div {
+    width: 100%;
+}
+
 /**********************************************
   Header and Contact
 **********************************************/
@@ -39,4 +43,21 @@ html {
     height: 1px;
     border: 0;
     border-top: 1px solid #3F3F74;
+}
+
+/**********************************************
+  Job Descriptions
+**********************************************/
+.container {
+    width: 100%;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.timeline {
+    display: block;
+    font-weight: bold;
+    text-align: right;
 }
