@@ -6,10 +6,6 @@ html {
     background-color: #CBDBFC;
 }
 
-div {
-    width: 100%;
-}
-
 /**********************************************
   Header and Contact
 **********************************************/
@@ -30,6 +26,49 @@ div {
 .sep::before {
     color: #4B692F;
     content: "|";
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    background-color: #AC3232;
+    overflow: hidden;
+}
+
+.button {
+    background-color: #AC3232;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #D95763;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
 }
 
 /**********************************************
