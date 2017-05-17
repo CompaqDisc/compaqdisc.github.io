@@ -1,15 +1,20 @@
 @font-face {
-    font-family: CP437;
-    src: url(fonts/Px437/Px437_ATI_8x8.ttf);
+    font-family: BIOS;
+    src: url(fonts/Px437/Px437_PhoenixEGA_8x8.ttf);
+}
+
+@font-face {
+	font-family: Amstrad;
+	src: url(fonts/Px437/Px437_AmstradPC1512-2y.ttf);
 }
 
 code {
-    font-family: CP437, monospace;
+    font-family: Amstrad, monospace;
 }
 
 body {
     background-color:#008080;
-    font-family: CP437, monospace;
+    font-family: BIOS, monospace;
     border-collapse: collapse;
 }
 
