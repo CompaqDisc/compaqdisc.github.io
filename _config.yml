@@ -1,3 +1,12 @@
-author: Herobrine2Nether
-permalink: /blog/:categories/:month/:day/:year/:title/
-url: https://herobrine2nether.github.io
+nav:
+  - title: Home
+    url: /
+  
+  - title: Downloads
+    url: /downloads/
+    
+  - title: Projects
+    url: /projects/
+    
+  - title: MineChunks
+    url: /server/
