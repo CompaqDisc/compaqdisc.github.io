@@ -3,9 +3,13 @@
     src: url(fonts/Px437/Px437_ATI_8x8.ttf);
 }
 
+code {
+    font-family: CP437, monospace;
+}
+
 body {
     background-color:#008080;
-    font-family: CP437;
+    font-family: CP437, monospace;
     border-collapse: collapse;
 }
 
