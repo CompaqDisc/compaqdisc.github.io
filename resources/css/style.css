@@ -134,3 +134,4 @@ p {
     background: #808080;
 }
 
+a:link, a:visited, a:hover, a:active { color:#00000FF; }
