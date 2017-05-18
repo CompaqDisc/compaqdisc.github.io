@@ -32,7 +32,7 @@ nav li {
 
 nav li a {
     display: block;
-    color: #c0c0c0;
+    color: #c0c0c0 !important;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -40,7 +40,7 @@ nav li a {
 
 nav li a:hover:not(.active) {
     background-color: #c0c0c0;
-    color: #000080;;
+    color: #000080 !important;
 }
 
 p {
@@ -50,7 +50,7 @@ p {
 
 .active {
     background-color: #c0c0c0;
-    color: #000080;
+    color: #000080 !important;
 }
 
 .content ul {
@@ -114,24 +114,24 @@ p {
 
 /**######################################*/
 
+a:link, a:visited, a:hover, a:active {color:#00F;}
+
 .social-twitter, .social-twitter a {
-    color: #00d7ff;
-    background: #005fff;
+    color: #00d7ff !important;
+    background: #005fff !important;
 }
 
 .social-youtube, .social-youtube a {
-    color: #ff0000;
-    background: #800000;
+    color: #ff0000 !important;
+    background: #800000 !important;
 }
 
 .social-twitch, .social-twitch a {
-    color: #af5fff;
-    background: #870087;
+    color: #af5fff !important;
+    background: #870087 !important;
 }
 
 .social-github, .social-github a {
-    color: #000000;
-    background: #808080;
+    color: #000000 !important;
+    background: #808080 !important;
 }
-
-a:link, a:visited, a:hover, a:active { color:#00000FF; }
