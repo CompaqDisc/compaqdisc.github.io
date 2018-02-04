@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="row">
+	<div class="twelve columns">
+		<h2 class="content-heading">{{ page.title }}</h2>
+		<p>{{ page.date | date: "%b %d, %Y" }}</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="twelve columns">
+		{{ content }}
+	</div>
+</div>
+
+<div class="row">
+	<div class="twelve columns">
+		<span>Tagged with: {% for tag in page.tags %}<a>#{{ tag }}</a>&nbsp;{% endfor %}</span>
+	</div>
+</div>

@@ -1,0 +1,18 @@
+<footer class="site-footer">
+				<div class="row">
+					<div class="twelve columns"><h2 class="footer-heading">{{ site.title }}</h2></div>
+				</div>
+				<div class="row">
+					<div class="one-half column">
+						<ul class="contact">
+							<li>{{ site.author }}</li>
+							<li><a href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i>&nbsp;{{ site.email }}</a></li>
+							<li><a href="https://www.twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i>&nbsp@{{ site.github_username }}</a></li>
+							<li><a href="https://www.github.com/{{ site.github_username }}"><i class="fa fa-github"></i>&nbsp{{ site.twitter_username }}</a></li>
+						</ul>
+					</div>
+					<div class="one-half column">
+						<p>{{ site.description | escape }}</p>
+					</div>
+				</div>
+			</footer>
