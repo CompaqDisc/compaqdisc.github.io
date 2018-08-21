@@ -6,11 +6,11 @@
 
 :root {
     --main-background-color: #fcfcfc;
-    --section-background-color: #171717;
-    --section-border: #0a0a0a;
-    --text-color: #D9D0DE;
+    --section-background-color: #0d2330;
+    --section-border: #0d2330;
+    --text-color: #fcfcfc;
     --title-color: #4281a4;
-    --hover-color: #BC8DA0;
+    --hover-color: #4281a4;
     --font: incons;
 }
 
