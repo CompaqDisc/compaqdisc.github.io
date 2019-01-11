@@ -1,5 +1,5 @@
 function getWeather() {
-    axios.get('https://api.openweathermap.org/data/2.5/weather?q=Littleton&units=metric&APPID=b5ebe07d826c9cd2a7c5cee382f117c5')
+    axios.get('https://api.openweathermap.org/data/2.5/weather?q=Denver&units=metric&APPID=b5ebe07d826c9cd2a7c5cee382f117c5')
     .then(res => {
         let rtemp = res.data.main.temp.toFixed(1);
         let code = res.data.weather[0].id;
