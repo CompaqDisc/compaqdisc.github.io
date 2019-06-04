@@ -5,12 +5,12 @@
 }
 
 :root {
-    --main-background-color: #fcfcfc;
-    --section-background-color: #0d2330;
-    --section-border: #0d2330;
-    --text-color: #777777;
-    --title-color: #4281a4;
-    --hover-color: #4281a4;
+    --main-background-color: #222222;
+    --section-background-color: #222222;
+    --section-border: #555555;
+    --text-color: #8db2e5;
+    --title-color: #eeeeee;
+    --hover-color: #708eb7;
     --font: incons;
 }
 
