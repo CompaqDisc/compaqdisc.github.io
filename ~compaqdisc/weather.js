@@ -16,7 +16,7 @@ function getWeather() {
 }
 
 function setWeather(rtemp) {
-    document.getElementById('temperature').innerHTML = rtemp + '°';
+    document.getElementById('temperature').innerHTML = rtemp + '°C';
 }
 
 function setIcon(code) {
