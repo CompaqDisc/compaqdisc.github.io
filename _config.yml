@@ -9,7 +9,7 @@ twitter_username: CompaqDisc
 github_username:  CompaqDisc
 google_analytics: UA-109309717-1
 
-include: ['+compaqdisc']
+include: ['~compaqdisc']
 
 permalink: /blog/:year/:month/:day/:title/
 
