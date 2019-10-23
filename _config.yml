@@ -1,6 +1,6 @@
-title: CodeOnDisc
-email: admin@compaqdisc.com
-author: CompaqDisc
+title: CompaqDisc
+email: bwolbeck@compaqdisc.com
+author: Bradan J. Wolbeck (CompaqDisc)
 description: >- # this means to ignore newlines until "baseurl:"
   Awesome on a CD-R!
 baseurl: "/" # the subpath of your site, e.g. /blog
