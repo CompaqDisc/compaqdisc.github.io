@@ -7,28 +7,18 @@ layout: default
 	</div>
 	{{ content }}
 </div>
-{% for category in site.categories %}
-	{% if category[0] == "auction" %}
-		{% for post in category[1] %}
-		<div class="row post">
-			<div class="one-third column">
-				<a href="{{ post.url | relative_url }}"><img src="{{ post.image | absolute_url }}" alt="Thumbnail for: {{ post.image | escape }}"></a>
-			</div>
-			<div class="two-thirds column">
+{% for auction in site.auctions %}
+	<div class="row post">
+		<div class="twelve columns">
 			<h3 class="section-heading">
-				<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+				<a href="{{ auction.url | relative_url }}">{{ auction.aid | escape }}</a>
 			</h3>
-			<p class="post-text">{{ post.excerpt | strip_html | normalize_whitespace }}</p>
+			<p class="post-text">{{ auction.excerpt | strip_html | normalize_whitespace }}</p>
 			{% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}
-				<div class="post-info">
-				<span>{{ post.date | date: date_format }}</span>
-				<span>{% for tag in post.tags %}<a>#{{ tag }}</a>&nbsp;{% endfor %}</span>
-				<a class="u-pull-right" href="{{ post.url | relative_url }}">Read More &rarr;</a>
-			</div>
+			<div class="post-info">
+				<span>{{ auction.date | date: date_format }}</span>
+				<a class="u-pull-right" href="{{ auction.url | relative_url }}">Read More &rarr;</a>
 			</div>
 		</div>
-		{% endfor %}
-	{% endif %}
+	</div>
 {% endfor %}
-				
-<p>Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS&nbsp;<i class="fa fa-rss"></i></a></p>

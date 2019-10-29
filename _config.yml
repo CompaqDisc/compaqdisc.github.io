@@ -16,3 +16,8 @@ permalink: /blog/:year/:month/:day/:title/
 markdown: kramdown
 plugins:
   - jekyll-feed
+
+collections:
+  auctions:
+    output: true
+    permalink: /emc/:collection/:name/
