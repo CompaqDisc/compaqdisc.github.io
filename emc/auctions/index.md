@@ -1,0 +1,3 @@
+---
+layout: auction_home
+---
