@@ -11,7 +11,7 @@ layout: default
 	<div class="row post">
 		<div class="twelve columns">
 			<h3 class="section-heading">
-				<a href="{{ auction.url | relative_url }}">{{ auction.title | escape }}</a>
+				<a href="{{ auction.url | relative_url }}">{{ auction.items[0] | escape }} - {{ auction.id }}</a>
 			</h3>
 			<p class="post-text">Items: {{ auction.summary }}</p>
 			{% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}
