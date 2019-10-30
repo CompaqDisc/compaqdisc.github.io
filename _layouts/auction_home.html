@@ -13,8 +13,7 @@ layout: default
 			<h3 class="section-heading">
 				<a href="{{ auction.url | relative_url }}">{{ auction.items[0] | escape }} - {{ auction.aid }}</a>
 			</h3>
-			<p class="post-text">Items:</p>
-			<ul>
+			<ul class="post-text">
 				{% for item in auction.items %}
 				<li>{{item}}</li>
 				{% endfor %}
