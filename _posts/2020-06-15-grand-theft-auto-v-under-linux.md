@@ -4,6 +4,7 @@ title: "Grand Theft Auto V Under Linux?"
 published: true
 tags: ["Linux", "Linux Gaming", "Proton"]
 categories: ["Gaming"]
+image: https://www.compaqdisc.com/files/2020-06-15-grand-theft-auto-v-under-linux.thumb.png
 ---
 
 ##### Background
