@@ -7,12 +7,13 @@
 */
 
 html {
-	font-family: 'Open Sans', sans-serif;
-    background-color: #fcfcfc;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fcfcfc;
 }
 
-.code {
-	font-family: 'Inconsolata', monospace;
+code {
+  font-family: 'Inconsolata', monospace;
+  overflow: auto;
 }
 
 a {
@@ -20,15 +21,15 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .site-title, .site-title:visited {
-    font-size: 26px;
-    line-height: 54px;
-	font-variant: small-caps;
-	font-weight: bold;
-	color: #0d2330;
+  font-size: 26px;
+  line-height: 54px;
+  font-variant: small-caps;
+  font-weight: bold;
+  color: #0d2330;
 }
 
 .site-title:hover {
@@ -36,96 +37,96 @@ a:hover {
 }
 
 .site-header {
-    border-bottom: 1px solid #0d2330;
+  border-bottom: 1px solid #0d2330;
 }
 
 .site-nav {
-	line-height: 54px;
+  line-height: 54px;
 }
 
 .site-nav ul {
-	list-style: none;
-	margin: 0px;
+  list-style: none;
+  margin: 0px;
 }
 
 .site-nav ul li {
-	display: inline;
-	padding: 0 5px;
+  display: inline;
+  padding: 0 5px;
 }
 
 .site-nav ul li a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .site-nav ul li a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .content-heading, .section-heading, .footer-heading {
-    line-height: 26px;
-    font-variant: small-caps;
-    font-weight: bold;
+  line-height: 26px;
+  font-variant: small-caps;
+  font-weight: bold;
 }
 
 .footer-heading {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 .content-heading {
-	font-size: 24px;
+  font-size: 24px;
 }
 
 .section-heading {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .section-heading a, .section-heading a:hover {
-    color: #0d2330;
+  color: #0d2330;
 }
 
 .site-footer {
-	border-top: 1px solid #0d2330;
-	padding: 30px 0;
+  border-top: 1px solid #0d2330;
+  padding: 30px 0;
 }
 
 .content {
-	padding: 30px 0;
+  padding: 30px 0;
 }
 
 .contact {
-	list-style: none;
+  list-style: none;
 }
 
 .contact li {
-	margin: 0px;
+  margin: 0px;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .map {
-    height: 380px;
+  height: 380px;
 }
 
 .post {
-    padding: 2em 0;
+  padding: 2em 0;
 }
 
 .external::after {
-    content: '\2197';
-    vertical-align: super;
-    font-size: .6em;
+  content: '\2197';
+  vertical-align: super;
+  font-size: .6em;
 }
 
 .not-found {
-	text-align: center;
+  text-align: center;
 }
 
 .not-found h1 {
-	margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
+  margin: 30px 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
 }
