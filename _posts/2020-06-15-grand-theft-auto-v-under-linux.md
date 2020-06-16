@@ -23,7 +23,11 @@ First off, ensure you have Steam Play enabled for all titles by navigating to `S
 The game should launch fine at this point, but there's still a few issues. If you attempt to play online things will look promising until the point you'd gain control of your character, where the game crashes. You may also notice the lack of controller detection, so let's solve those now.
 
 ##### Workarounds
-Fire up a shell and run the following, replacing paths where appropriate. ```env WINEPREFIX="/path/to/steamapps/compatdata/271590/pfx/" WINEPATH="/path/to/steamapps/common/Proton 4.11/dist/bin/wine64" winecfg``` you may decline the Wine Mono/Gecko Installers if prompted. Select the libraries tab and enter `winedbg.exe` into the 'New override for library' text field. Click add, then find the new entry in the list below and click edit. Set the load order to disabled. Now go back to the text field and locate `dinput8` in the dropdown, then change the load order to builtin. Apply the changes and exit the config menu.
+Fire up a shell and run the following, replacing paths where appropriate. 
+```
+env WINEPREFIX="/path/to/steamapps/compatdata/271590/pfx/" WINEPATH="/path/to/steamapps/common/Proton 4.11/dist/bin/wine64" winecfg
+```
+you may decline the Wine Mono/Gecko Installers if prompted. Select the libraries tab and enter `winedbg.exe` into the 'New override for library' text field. Click add, then find the new entry in the list below and click edit. Set the load order to disabled. Now go back to the text field and locate `dinput8` in the dropdown, then change the load order to builtin. Apply the changes and exit the config menu.
 
 Now GTA should run without any major issues. Changing any of the graphics settings that force a restart may be problematic, as somethimes the game refuses to exit completely, if that occurs just exit steam completely and it should take care of the non-compliant process. If that fails to help, try logging out and back in. If the controller still fails to register on occasion, try restarting the game.
 
