@@ -26,10 +26,6 @@ code {
   overflow: auto;
 }
 
-.highlight code::after {
-  content: "  ";
-}
-
 a {
    text-decoration: none;
 }
