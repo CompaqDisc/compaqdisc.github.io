@@ -6,6 +6,16 @@
 * #3690C1: Accent #2
 */
 
+.display-desktop {
+  display: none;
+}
+
+@media (min-width: 550px) {
+  .display-desktop {
+    display: initial;
+  }
+}
+
 html {
   font-family: 'Open Sans', sans-serif;
   background-color: #fcfcfc;
@@ -14,6 +24,10 @@ html {
 code {
   font-family: 'Inconsolata', monospace;
   overflow: auto;
+}
+
+.highlight code::after {
+  content: "  ";
 }
 
 a {
