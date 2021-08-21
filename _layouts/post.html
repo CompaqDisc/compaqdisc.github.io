@@ -1,34 +1,7 @@
 ---
 layout: default
 ---
-<div class="row">
-	<div class="twelve columns">
-		<h2 class="content-heading">{{ page.title }}</h2>
-		<p>{{ page.date | date: "%b %d, %Y" }}</p>
-	</div>
-</div>
-
-<div class="row">
-	<div class="twelve columns">
-		{{ content }}
-	</div>
-</div>
-
-<div class="row">
-	<div class="twelve columns">
-		<span>Tagged with: {% for tag in page.tags %}<a>#{{ tag }}</a>&nbsp;{% endfor %}</span>
-	</div>
-</div>
-
-<div class="row">
-	<div class="twelve columns">
-		<script src="https://utteranc.es/client.js"
-				repo="CompaqDisc/compaqdisc.github.io"
-				issue-term="pathname"
-				label="request for comments"
-				theme="github-light"
-				crossorigin="anonymous"
-				async>
-		</script>
-	</div>
-</div>
+<h1 class="post-title">{{ page.title }}</h1>
+{% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}
+<p class="post-meta"><time datetime="{{ page.date }}">Published {{ page.date | date: date_format }}</time></p>
+{{ content }}

@@ -1,0 +1,31 @@
+{% if projects.size == 0 %}
+<p>There are no items to display.</p>
+{% endif %}
+{% for project in projects %}
+{% assign mod = forloop.index | modulo: 3 %}
+{% if mod == 1 %}
+<div class="project-row">
+{% endif %}
+    <div class="project-box">
+        <div class="project-box-heading">
+            <b>{{ project.name }}</b>
+        </div>
+        <div class="project-box-content">
+            {{ project.excerpt }}
+            <div class="project-box-links">
+                {% if project.github %}
+                <a href="{{ project.github }}">GitHub &raquo</a>
+                {% endif %}
+                {% if project.sourcehut %}
+                <a href="{{ project.sourcehut }}">sourcehut &raquo</a>
+                {% endif %}
+                {% if project.link_page %}
+                <a href="{{ project.url }}">Read More &raquo;</a>
+                {% endif%}
+            </div>
+        </div>
+    </div>
+{% if mod == 0 or forloop.last %}
+</div>
+{% endif %}
+{% endfor %}
