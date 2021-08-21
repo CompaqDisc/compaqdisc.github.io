@@ -1,0 +1,13 @@
+---
+layout: page
+---
+<p>{{ content }}</p>
+<h1>Active/Released Projects</h1>
+{% assign projects = site.projects | where:'active', true %}
+{% include projects-list.html %}
+
+<!--
+<h1>Abandoned Projects</h1>
+{% assign projects = site.projects | where:'active', false %}
+{% include projects-list.html %}
+-->

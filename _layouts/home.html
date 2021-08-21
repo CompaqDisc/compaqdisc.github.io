@@ -1,30 +1,24 @@
 ---
 layout: default
 ---
-<div class="row">
-	<div class="twelve columns">
-		<h2 class="content-heading">Posts</h2>
-	</div>
-	{{ content }}
-</div>
-{% for post in site.posts %}
-<div class="row post">
-	<div class="one-third column display-desktop">
-		<a href="{{ post.url | relative_url }}"><img src="{{ post.image | absolute_url }}" alt="Thumbnail for: {{ post.image | escape }}"></a>
-	</div>
-	<div class="two-thirds column">
-	<h3 class="section-heading">
-		<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-	</h3>
-	<p class="post-text">{{ post.excerpt | strip_html | normalize_whitespace }}</p>
-	{% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}
-		<div class="post-info">
-		<span>{{ post.date | date: date_format }}</span>
-		<span>{% for tag in post.tags %}<a>#{{ tag }}</a>&nbsp;{% endfor %}</span>
-		<a class="u-pull-right" href="{{ post.url | relative_url }}">Read More &rarr;</a>
-	</div>
-	</div>
-</div>
-{% endfor %}
-				
-<p>Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS&nbsp;<i class="fa fa-rss"></i></a></p>
+<h2>About</h2>
+{{ content }}
+<hr>
+<h2>Recent Posts</h2>
+<ul class="compact-post-list">
+    {% for post in site.posts limit:5 %}
+    <li>
+        {% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}
+        <span class="compact-post-meta">{{ post.date | date: date_format }}</span>
+        ·
+        <a class="compact-post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        <p>{{ post.excerpt | strip_html | normalize_whitespace }}</p>
+        
+        <ul class="post-tags">
+            {% for tag in post.tags %}
+            <li>#{{ tag }}</li>
+            {% endfor %}
+        </ul>
+    </li>
+    {% endfor %}
+</ul>
