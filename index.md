@@ -6,9 +6,9 @@ layout: home
 
 Hello there! I'm Bradan Wolbeck (aka CompaqDisc), a 22-year-old software developer from Denver, Colorado. I enjoy reverse-engineering, old and/or esoteric technology, embedded computing, video games, mechanical keyboards and most combinations of those things.
 
-I can be found across the web: GitHub ([@{{ site.github_username }}](https://github.com/{{ site.github_username }})), Instagram ([@{{ site.instagram_username }}](https://instagram.com/{{ site.instagram_username }})), Twitter ([@{{ site.twitter_username }}](https://twitter.com/{{ site.twitter_username }})), or email me: [{{ site.email }}](mailto:{{ site.email }})
+I can be found across the web: [GitHub]({{ site.socials.github.uri }}), [Mastodon]({{ site.socials.mastodon.uri }}), or email me: [{{ site.email }}](mailto:{{ site.email }})
 
-Like my stuff? Feel free to buy me a coffee: [Ko-fi](https://ko-fi.com/compaqdisc), <span class="nano_qr"><a href="{{ site.nano_address }}">Nano</a><span id="qrTarget"></span></span>
+Like my stuff? Feel free to buy me a coffee: [Ko-fi]({{ site.donations.ko-fi.uri }}), <span class="nano_qr"><a href="{{ site.donations.nano.uri }}">Nano</a><span id="qrTarget"></span></span>
 
 <style>
 .nano_qr {
@@ -38,6 +38,6 @@ Like my stuff? Feel free to buy me a coffee: [Ko-fi](https://ko-fi.com/compaqdis
 </style>
 <script src="https://larsjung.de/kjua/latest/kjua-0.9.0.min.js"></script>
 <script>
-var el = kjua({text: '{{ site.nano_address }}', rounded: 100, quiet: 1});
+var el = kjua({text: '{{ site.donations.nano.uri }}', rounded: 100, quiet: 1});
 document.querySelector('#qrTarget').appendChild(el);
 </script>

@@ -1,15 +1,27 @@
 title: CompaqDisc's Website
 email: bwolbeck@compaqdisc.com
 author: Bradan J. Wolbeck (CompaqDisc)
-description: >- # ignore newlines
+description: >-
   reticulating splines since 2017
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://www.compaqdisc.com" # the base hostname & protocol for your site
-twitter_username: CompaqDisc
-instagram_username: compaqdisc
-github_username:  CompaqDisc
-nano_address: "nano:nano_1discram3s5yfuenkfacgha6d5e9k3psycm7mf7s4dftpoiy1j696imbi1i8"
-#google_analytics: UA-109309717-1
+baseurl: "/"
+url: "https://www.compaqdisc.com"
+
+socials:
+  twitter:
+    uri: "https://twitter.com/CompaqDisc"
+  instagram:
+    uri: "https://instagram.com/compaqdisc"
+  github:
+    uri: "https://github.com/CompaqDisc"
+  mastodon:
+    uri: "https://mastodon.social/@compaqdisc"
+
+donations:
+  ko-fi:
+    uri: "https://ko-fi.com/compaqdisc"
+  nano:
+    uri: "nano:nano_1discram3s5yfuenkfacgha6d5e9k3psycm7mf7s4dftpoiy1j696imbi1i8"
+  
 
 include: ['~compaqdisc']
 
@@ -23,6 +35,3 @@ collections:
   projects:
     output: true
     permalink: /project/:name/
-#  auctions:
-#    output: true
-#    permalink: /emc/:collection/:name/
