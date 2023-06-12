@@ -4,7 +4,7 @@ layout: home
 ---
 <img class="float-right" src="/files/zilog_inside.gif" alt="'Zilog Inside' Badge" title="Imagine if your computer was running on a Zilog CPU..." width="100px">
 
-Hello there! I'm Bradan Wolbeck (aka CompaqDisc), a 22-year-old software developer from Denver, Colorado. I enjoy reverse-engineering, old and/or esoteric technology, embedded computing, video games, mechanical keyboards and most combinations of those things.
+Hello there! I'm Bradan Wolbeck (aka CompaqDisc), a 23-year-old software developer from Denver, Colorado. I enjoy reverse-engineering, old and/or esoteric technology, embedded computing, video games, mechanical keyboards and most combinations of those things.
 
 I can be found across the web: [GitHub]({{ site.socials.github.uri }}), [Mastodon]({{ site.socials.mastodon.uri }}), or email me: [{{ site.email }}](mailto:{{ site.email }})
 
