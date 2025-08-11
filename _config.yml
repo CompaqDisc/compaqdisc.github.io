@@ -7,14 +7,12 @@ baseurl: "/"
 url: "https://www.compaqdisc.com"
 
 socials:
-  twitter:
-    uri: "https://twitter.com/CompaqDisc"
   instagram:
     uri: "https://instagram.com/compaqdisc"
   github:
     uri: "https://github.com/CompaqDisc"
   mastodon:
-    uri: "https://mastodon.social/@compaqdisc"
+    uri: "https://theomega.zone/@compaqdisc"
 
 donations:
   ko-fi:
